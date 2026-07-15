@@ -1,0 +1,39 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Keil project outputs (keep source, ignore build)
+*.o
+*.d
+*.crf
+*.htm
+*.dep
+*.lst
+*.map
+*.axf
+*.hex
+*.bin
+*.lnp
+*.sct
+*.iex
+JLinkLog.txt
+
+# Build directories
+Objects/
+Listings/
+DebugConfig/
+RTE/
+
+# Backup files
+*.bak
+*.old
+*.tmp
+~$*
