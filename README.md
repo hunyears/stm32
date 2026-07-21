@@ -10,8 +10,8 @@
 | 2026-07-13 | Day 02 - 跑马灯 | [📖 笔记](docs/day02-running-led/README.md) | ✅ 已完成 |
 | 2026-07-14 | Day 03 - 蜂鸣器 | [📖 笔记](docs/day03-buzzer/README.md) | ✅ 已完成 |
 | 2026-07-15 | Day 04 - 按键输入与传感器 | [📖 笔记](docs/day04-input/README.md) | ✅ 已完成 |
-| - | Day 05 - EXTI 中断 | - | 🔜 待学习 |
-| - | Day 06 - 定时器 | - | 🔜 待学习 |
+| 2026-07-21 | Day 05 - 按键控制 LED | [📖 笔记](docs/day05/README.md) | ✅ 已完成 |
+| - | Day 06 - EXTI 中断 | - | 🔜 待学习 |
 | - | Day 07 - PWM 输出 | - | 🔜 待学习 |
 | - | Day 08 - USART 串口 | - | 🔜 待学习 |
 | - | Day 09 - I2C 通信 | - | 🔜 待学习 |
@@ -30,6 +30,8 @@ stm32/
 │   ├── day03-buzzer/            # Day03: 蜂鸣器
 │   │   └── README.md
 │   ├── day04-input/             # Day04: 按键输入与传感器
+│   │   └── README.md
+│   ├── day05/                   # Day05: 按键控制 LED
 │   │   └── README.md
 │   ├── images/                  # 笔记图片（按天分类）
 │   │   ├── day01-led/
@@ -51,6 +53,7 @@ stm32/
 - [x] 理解上拉电阻与下拉电阻原理
 - [x] 掌握温度传感器（DS18B20）原理
 - [x] 掌握光敏传感器与 ADC 采集
+- [x] 掌握按键扫描与状态机消抖
 - [ ] 掌握外部中断 EXTI
 - [ ] 掌握定时器基本用法
 - [ ] 掌握 PWM 输出
