@@ -1,6 +1,27 @@
 # STM32 嵌入式学习笔记
 
-> 从零开始学习 STM32 单片机开发的完整记录（30天学习计划）
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Author](https://img.shields.io/badge/author-Strive-orange.svg)](https://github.com/Strive)
+[![Platform](https://img.shields.io/badge/platform-STM32F103-green.svg)]()
+[![Language](https://img.shields.io/badge/language-C-blueviolet.svg)]()
+
+> 🚀 从零开始学习 STM32 单片机开发的完整记录（30天学习计划）
+
+## 📝 项目简介
+
+本项目是作者 **Strive** 从 Java 转型嵌入式开发的完整学习记录。通过 30 天系统化的学习计划，从 GPIO 基础到综合项目实战，全面掌握 STM32F103 开发技能。
+
+**本项目已开源，欢迎各位学习者、开发者指正和交流！** ⭐ Star 支持一下~
+
+### ✨ 特色
+
+- 📚 **系统化学习**：30 天循序渐进，从入门到项目实战
+- 💡 **原理图解**：每个知识点配有详细图解和时序分析
+- 🔧 **完整代码**：每个实验包含可运行的完整代码示例
+- 🎯 **项目驱动**：最终完成智能温控系统综合项目
+- 📖 **中文文档**：全中文教程，适合国内开发者
+
+---
 
 ## 📚 学习进度总览
 
@@ -97,85 +118,96 @@ stm32/
 ├── README.md                    # 项目总览（你正在看这个）
 ├── docs/                        # 学习笔记
 │   ├── day01-led/               # Day01: GPIO 点灯
-│   │   └── gpio-output.md
 │   ├── day02-running-led/       # Day02: 跑马灯
-│   │   └── running-led.md
 │   ├── day03-buzzer/            # Day03: 蜂鸣器
-│   │   └── buzzer.md
 │   ├── day04-input/             # Day04: 按键输入与传感器
-│   │   └── key-sensor.md
 │   ├── day05/                   # Day05: 按键消抖与状态机
-│   │   └── key-debounce.md
 │   ├── day06/                   # Day06: 外部中断 EXTI
-│   │   └── external-interrupt.md
 │   ├── day07/                   # Day07: 定时器中断
-│   │   └── timer-interrupt.md
 │   ├── day08/                   # Day08: PWM 输出基础
-│   │   └── pwm-basics.md
 │   ├── day09/                   # Day09: PWM 呼吸灯
-│   │   └── pwm-breathing-led.md
 │   ├── day10/                   # Day10: PWM 舵机控制
-│   │   └── pwm-servo.md
 │   ├── day11/                   # Day11: 输入捕获
-│   │   └── input-capture.md
 │   ├── day12/                   # Day12: USART 串口基础
-│   │   └── usart-basics.md
 │   ├── day13/                   # Day13: USART 中断与 DMA
-│   │   └── usart-interrupt-dma.md
 │   ├── day14/                   # Day14: 串口应用实战
-│   │   └── usart-practice.md
 │   ├── day15/                   # Day15: I2C 协议基础
-│   │   └── i2c-basics.md
 │   ├── day16/                   # Day16: I2C OLED 显示屏
-│   │   └── i2c-oled.md
 │   ├── day17/                   # Day17: I2C 温湿度传感器
-│   │   └── i2c-aht10.md
 │   ├── day18/                   # Day18: SPI 协议基础
-│   │   └── spi-basics.md
 │   ├── day19/                   # Day19: SPI Flash 存储
-│   │   └── spi-flash.md
 │   ├── day20/                   # Day20: ADC 多通道采集
-│   │   └── adc-multi-channel.md
 │   ├── day21/                   # Day21: DAC 模拟输出
-│   │   └── dac-output.md
 │   ├── day22/                   # Day22: RTC 实时时钟
-│   │   └── rtc-clock.md
 │   ├── day23/                   # Day23: 看门狗
-│   │   └── watchdog.md
 │   ├── day24/                   # Day24: 低功耗模式
-│   │   └── low-power.md
 │   ├── day25/                   # Day25: NVIC 中断管理进阶
-│   │   └── nvic-advanced.md
 │   ├── day26/                   # Day26: 项目设计
-│   │   └── project-design.md
 │   ├── day27/                   # Day27: 项目实现（一）
-│   │   └── project-sensor.md
 │   ├── day28/                   # Day28: 项目实现（二）
-│   │   └── project-display.md
 │   ├── day29/                   # Day29: 项目实现（三）
-│   │   └── project-control.md
 │   ├── day30/                   # Day30: 总结与进阶
-│   │   └── summary.md
 │   ├── images/                  # 笔记图片（按天分类）
-│   │   ├── day01-led/
-│   │   ├── day02-running-led/
-│   │   ├── day03-buzzer/
-│   │   └── day04-input/
 │   └── code-snippets/           # 常用代码片段速查
-│       └── README.md
 └── resources/                   # 参考资料 & 外链
-    └── README.md
 ```
 
 ---
 
 ## 🔧 开发环境
 
-- **芯片**: STM32F103
-- **开发板**: STM32F103C8T6 最小系统板
-- **IDE**: Keil MDK / STM32CubeIDE
-- **烧录器**: ST-Link
-- **库**: 标准库
+| 项目 | 说明 |
+|------|------|
+| **芯片** | STM32F103C8T6 |
+| **开发板** | STM32F103C8T6 最小系统板 |
+| **IDE** | Keil MDK / STM32CubeIDE |
+| **烧录器** | ST-Link V2 |
+| **固件库** | STM32 标准外设库 |
+| **调试工具** | USB-TTL（CH340）、逻辑分析仪 |
+
+---
+
+## 🚀 快速开始
+
+### 1. 克隆项目
+
+```bash
+git clone https://github.com/Strive/stm32-learning.git
+```
+
+### 2. 学习路径
+
+建议按顺序学习，每天完成一个主题：
+
+1. **第一周**：GPIO 与中断基础
+2. **第二周**：定时器与 PWM
+3. **第三周**：通信协议（I2C/SPI）与模拟外设
+4. **第四周**：系统功能与项目实战
+
+### 3. 硬件准备
+
+- STM32F103C8T6 最小系统板
+- ST-Link V2 烧录器
+- USB-TTL 模块（串口调试）
+- 常用元器件（LED、按键、蜂鸣器、传感器等）
+
+---
+
+## 🤝 贡献指南
+
+欢迎各位学习者提出宝贵意见！
+
+- 🐛 发现错误？[提交 Issue](../../issues)
+- 💡 有建议？[参与讨论](../../discussions)
+- 🔧 想贡献代码？欢迎提交 Pull Request
+
+### 如何贡献
+
+1. Fork 本仓库
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 提交 Pull Request
 
 ---
 
@@ -208,4 +240,29 @@ stm32/
 
 ---
 
+## 📜 License
+
+本项目采用 [MIT License](LICENSE) 开源协议。
+
+---
+
+## 🙏 致谢
+
+感谢以下资源和社区的帮助：
+
+- [STM32 官方文档](https://www.st.com/zh-CN/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html)
+- [正点原子](http://www.openedv.com/)
+- [野火电子](https://doc.embedfire.com/)
+- [STM32 中文论坛](https://www.stmcu.org.cn/)
+
+---
+
+<div align="center">
+
+**⭐ 如果这个项目对你有帮助，请给一个 Star ⭐**
+
 *学习始于 2026-07-12，坚持每天进步一点点 💪*
+
+Made with ❤️ by **Strive**
+
+</div>
